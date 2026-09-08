@@ -1,0 +1,36 @@
+{
+  "name": "pxd2-lex-demo",
+  "version": 1,
+  "sentences": [
+    {
+      "id": 1,
+      "keys": ["diagnostic", "thrusters", "battery"],
+      "slots": ["pct"],
+      "sentence": "System diagnostic complete. All thrusters operational. Battery at {pct}%."
+    },
+    {
+      "id": 2,
+      "keys": ["abort", "land", "immediately"],
+      "slots": [],
+      "sentence": "Abort the flight and land immediately. Hold present heading until wheels are down."
+    },
+    {
+      "id": 3,
+      "keys": ["mesh", "core", "silent"],
+      "slots": ["n"],
+      "sentence": "Mesh-Brain node {n} is live. Radio is a throat. The CORE stays silent."
+    },
+    {
+      "id": 4,
+      "keys": ["library", "sync", "hash"],
+      "slots": [],
+      "sentence": "Refuse the frame. Library hash mismatch. Sync the book out of band before the next sentence."
+    },
+    {
+      "id": 42,
+      "keys": ["status", "ready", "await"],
+      "slots": ["pct"],
+      "sentence": "Plant ready. Fuel {pct} percent. Awaiting numerical sentence from the CORE."
+    }
+  ]
+}
