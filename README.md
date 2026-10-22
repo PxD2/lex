@@ -38,7 +38,7 @@ LEX1 | width | lib_crc32 | id | slot_mask | slots…
 - `id` — the ideogram
 - `slot_mask` — optional `pct` (u8) and `n` (u16) so one paragraph can carry live numbers
 
-A 500-byte status paragraph becomes **1 byte + slots**, not 500 bytes of UTF-8.
+A 500-byte status paragraph becomes a **1-byte id + slots**, inside a frame of about a dozen bytes (magic, width, book CRC, count). Measured messages are 11–13 bytes, not 500 bytes of UTF-8.
 That is the 99%+ cut — on closed books, not on arbitrary internet text.
 
 ## Run
